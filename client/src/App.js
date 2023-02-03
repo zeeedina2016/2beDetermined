@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 
 import { useApi } from './hooks/use-api';
@@ -14,6 +15,10 @@ function App() {
       </header>
     </div>
   );
+}
+
+function hello() {
+  return React.createElement('div', null, 'Hello Testing');
 }
 
 export default App;
