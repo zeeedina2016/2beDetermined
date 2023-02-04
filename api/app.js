@@ -18,7 +18,7 @@ var usersRouter = require('./routes/users');
 //})
 
 // routes
-app.use('/api/medrecords', medRoutes)
+
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
@@ -44,6 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/medrecords', medRoutes)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
