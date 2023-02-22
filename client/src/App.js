@@ -1,4 +1,5 @@
 import './App.css';
+import UpdatePage from './UpdatePage.js'
 
 import { useApi } from './hooks/use-api';
 
@@ -6,13 +7,7 @@ function App() {
   const { response } = useApi();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          {response}
-        </p>
-      </header>
-    </div>
+    <UpdatePage />
   );
 }
 
