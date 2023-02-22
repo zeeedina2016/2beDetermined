@@ -7,6 +7,7 @@ function App() {
   const { response } = useApi();
 
   return (
+    //This is how to use the UpdatePage as it returns a fuction UpdatePage and this calls this function which will render what UpdatePage returns
     <UpdatePage />
   );
 }
