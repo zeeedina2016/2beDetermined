@@ -1,10 +1,8 @@
 import React, {useState} from "react";
+//TODO: create UpdatePage.css to style everything
 
 
-
-export default function Form() {
-
-  
+export default function UpdatePage() {
 
   // Sets up initial values. TODO: Use patient id and exam id to fill out info
   const [values, setValues] = React.useState({
@@ -42,6 +40,7 @@ export default function Form() {
   }
 
   return (  
+    // All of this is the various components of the form. Still need to style thought
     <form onSubmit={handleSubmit}>
       <h1> Edit Exam</h1>
 
