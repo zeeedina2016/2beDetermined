@@ -8,7 +8,8 @@ function getInfo() {
 }
 
 
-export default function UpdatePage() {
+
+export default function UpdatePage(props) {
 
   // Sets up initial values. TODO: Use patient id and exam id to fill out info
   const [values, setValues] = React.useState({
@@ -23,6 +24,20 @@ export default function UpdatePage() {
     KeyFindings: "",
     BrixiaScore: ""
   })
+
+  const url = "localhost:4000/medrecords/" + props.id
+  useEffect(() => {
+    
+    fetch(url)
+       .then((res) => res.json())
+       .then((data) => {
+          console.log(data);
+          
+       })
+       .catch((err) => {
+          console.log(err.message);
+       });
+  }, []);
 
   //handles the changes when user type in input boxs. It changes the value pertaining to the input
   const handleInputChange = (e) => {
