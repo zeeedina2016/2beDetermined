@@ -1,5 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 //TODO: create UpdatePage.css to style everything
+import './UpdatePage.css'
+
+function getInfo() {
+  const initial_data = ["hi", "hello", "great"]
+  return initial_data
+}
 
 
 export default function UpdatePage() {
@@ -14,7 +20,8 @@ export default function UpdatePage() {
     ExamID: "", 
     ImageURL: "",
     Date: "", 
-    KeyFindings: ""
+    KeyFindings: "",
+    BrixiaScore: ""
   })
 
   //handles the changes when user type in input boxs. It changes the value pertaining to the input
@@ -41,15 +48,17 @@ export default function UpdatePage() {
 
   return (  
     // All of this is the various components of the form. Still need to style thought
+    <div className='form'>
     <form onSubmit={handleSubmit}>
       <h1> Edit Exam</h1>
 
       <div className='buttonsContainer'>
-        <button type="submit">Add Exam</button>
-        <button onClick={handleClick}>Cancel</button>
+        <button className='submitButton' type="submit">Add Exam</button>
+        <button className='cancelButton' onClick={handleClick}>Cancel</button>
       </div>
 
-      <div className="PatientInfo">
+      <div class='infoContainer'>
+      <div className="patientInfo">
         <h2> Patient Info</h2>
 
         <label>
@@ -88,7 +97,7 @@ export default function UpdatePage() {
       
       </div>
 
-      <div className="ExamInfo">
+      <div className="examInfo">
         <h2> Exam Info</h2>
 
         <label>
@@ -105,7 +114,7 @@ export default function UpdatePage() {
         <br/>
 
         <br/>
-        <img src={values.ImageURL} width={250} height={250}/>
+        <img src={values.ImageURL} alt="" width={250} height={250}/>
         <br/>
 
         <br/>
@@ -121,9 +130,19 @@ export default function UpdatePage() {
         <textarea name="KeyFindings" value={values.KeyFindings} onChange={handleInputChange}/>
         </label>
         <br/>
+
+        <br/>
+        <label>
+        <b>Brixia Score (separated by commas):</b><br/>
+        <input type="text" name="BrixiaScore" value={values.BrixiaScore} onChange={handleInputChange}/>
+        </label>
+        <br/>
+        <br/>
       
+      </div>
       </div> 
     </form>
+    </div>
   );
 }
 
