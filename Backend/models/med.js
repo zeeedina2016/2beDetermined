@@ -44,8 +44,17 @@ const medSchema = new Schema({
     },
     Mortality: {
         type: String,
+        required: true
+    },
+    Key_Findings:{
+        type: String,
+        required: false
+    },
+    Brixa_Score:{
+        type: String,
         required: false
     }
+    
 }, {timestamps: true})
 
 module.exports = mongoose.model("XRay",medSchema)
