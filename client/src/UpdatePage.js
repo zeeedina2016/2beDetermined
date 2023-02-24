@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //TODO: create UpdatePage.css to style everything
 import './UpdatePage.css'
 
@@ -25,9 +25,11 @@ export default function UpdatePage(props) {
     BrixiaScore: ""
   })
 
-  const url = "localhost:4000/medrecords/" + props.id
+  console.log(props.id)
+
+  
   useEffect(() => {
-    
+    const url = "localhost:4000/medrecords/" + props.id
     fetch(url)
        .then((res) => res.json())
        .then((data) => {
