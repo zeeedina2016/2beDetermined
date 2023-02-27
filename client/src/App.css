@@ -19,3 +19,261 @@
 .App-link {
   color: #61dafb;
 }
+
+.page {
+  background-color: black;
+}
+
+.col1_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 67px;
+  top: 216px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #114973;
+}
+
+.patientID_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 68px;
+  top: 267px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.patientID {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 72px;
+  top: 298px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.age_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 70px;
+  top: 335px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.age {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 72px;
+  top: 365px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.sex_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 68px;
+  top: 399px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.sex {
+  position: absolute;
+  width: 295px;
+  height: 32px;
+  left: 68px;
+  top: 417px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bmi_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 68px;
+  top: 463px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.bmi {
+  position: absolute;
+  width: 295px;
+  height: 32px;
+  left: 68px;
+  top: 482px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.zipCode_H {
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 70px;
+  top: 534px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.zipCode {
+  position: absolute;
+  width: 295px;
+  height: 32px;
+  left: 70px;
+  top: 555px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.col2_H {
+  position: absolute;
+  width: 236.32px;
+  height: 29.9px;
+  left: 489.15px;
+  top: 212.43px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #114973;
+}
+
+.img {
+  position: absolute;
+  width: 259.47px;
+  height: 258.5px;
+  left: 700.39px;
+  top: 234.62px;
+  background: #D8E2E9;
+}
+
+.examID_H {
+  position: absolute;
+  width: 236.32px;
+  height: 29.9px;
+  left: 518.09px;
+  top: 543.28px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.examID {
+  position: absolute;
+  width: 236.32px;
+  height: 29.9px;
+  left: 521.94px;
+  top: 573.18px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.col1 {
+  position: absolute;
+  width: 325px;
+  height: 649px;
+  left: 55px;
+  top: 197px;
+  background-color: #EAEEF1;
+
+}
+
+.col2 {
+  position: absolute;
+  width: 762.97px;
+  height: 626px;
+  left: 466px;
+  top: 197px;
+  background: #EAEEF1;
+}
+
+.colHeader {
+  color: #114973;
+  
+}
+
+.subObjectHeadings {
+  color: #8BAFCB;
+}
+
+.subObjectData {
+  background-color: white;
+}
+
+.buttonPatient {
+  position: absolute;
+  width: 118px;
+  height: 27px;
+  left: 159px;
+  top: 648px;
+  background: #114973;
+  color: white;
+}
+
+.buttonExam {
+  position: absolute;
+  width: 113.82px;
+  height: 26.04px;
+  left: 793.95px;
+  top: 769.95px;
+  background: #114973;
+  color: white;
+}

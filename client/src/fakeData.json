@@ -1,0 +1,13 @@
+[
+    {
+      "id": "1",
+      "age": "a",
+      "sex": "b",
+      "bmi": "c",
+      "zipCode": "d",
+      "examID": "e",
+      "imageURL": "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/COVID-19-AR-16434381_XR_CHEST_AP_ONLY_1.png",
+      "date": "f",
+      "keyFindings": "g"
+    }
+]
