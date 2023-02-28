@@ -18,20 +18,22 @@ export default function UpdatePage(props) {
     BrixiaScore: ""
   })
 
-  console.log("The id: " + props.id)
   const id = props.id
 
   const [value, setValue] = React.useState(null)
 
   useEffect(() => {
     const fetchMedRecords = async () => {
-      const url = '/medrecords/' + id
+      const url = 'http://localhost:4000/medrecords/' + id
       console.log(url)
-      const response = await fetch(url)
+      const response = await fetch(url, {mode: 'no-cors'})
       const json = await response.json()
+
+      console.log(json)
 
       if (response.ok) {
         setValue(json)
+        console.log(value)
       }
     }
 
