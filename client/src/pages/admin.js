@@ -1,9 +1,9 @@
-import React, {useContext, useEffect, useState, Fragment} from 'react';
+import React, {useState, Fragment} from 'react';
 import { nanoid } from 'nanoid'
-import '../../App.css';
-import data from "../../mock-data.json";
-import ReadOnlyRow from '../read-only-row';
-import EditableRow from '../editable-row';
+import data from "../mock-data.json";
+import ReadOnlyRow from '../Components/read-only-row';
+import EditableRow from '../Components/editable-row';
+import '../css/admin.css';
 
 
 

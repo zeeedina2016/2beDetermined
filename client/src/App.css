@@ -1,63 +1,39 @@
-.App {
-  text-align: center;
-}
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Layout*/
+ * {
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 1rem;
-}
-
-table {
-  border-collapse: collapse;
+body {
+  background: #e5e2e2;
+  font-family: "Lato";
   width: 100%;
 }
 
-th,
-td {
-  border: 1px solid #ffffff;
-  text-align: left;
-  padding: 8px;
-  font-size: 32px;
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 25px;
 }
 
-th {
-  background-color: rgb(117, 201, 250);
+h2 {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+  font-weight: 600;
+  color: inherit;
+  padding: 15px;
 }
 
-td {
-  background-color: rgb(205, 235, 253);
-}
-
-form {
-  display: flex;
-  gap: 5px;
-}
-
-form td:last-child {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-form * {
-  font-size: 28px;
-}
+ pages{
+    margin-top: 10%;
+    color: #e7195a;
+    text-align: center;
+    font-size: 3.5rem;
+  }
