@@ -23,16 +23,19 @@
     
     display: grid; 
     grid-template-columns: 1fr 1fr; 
+    background-color: gray;
 }
 
 .patientInfo {
     
-    margin-left: 20%;
-    margin-right: -5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: white;
 }
 .examInfo {
-    margin-right: 20%;
-    margin-left: -5%;
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: white;
 }
 
 .infoContainer input, textarea {

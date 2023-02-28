@@ -2,13 +2,6 @@ import React, { useEffect } from "react";
 //TODO: create UpdatePage.css to style everything
 import './UpdatePage.css'
 
-function getInfo() {
-  const initial_data = ["hi", "hello", "great"]
-  return initial_data
-}
-
-
-
 export default function UpdatePage(props) {
 
   // Sets up initial values. TODO: Use patient id and exam id to fill out info
@@ -25,21 +18,25 @@ export default function UpdatePage(props) {
     BrixiaScore: ""
   })
 
-  console.log(props.id)
+  console.log("The id: " + props.id)
+  const id = props.id
 
-  
+  const [value, setValue] = React.useState(null)
+
   useEffect(() => {
-    const url = "localhost:4000/medrecords/" + props.id
-    fetch(url)
-       .then((res) => res.json())
-       .then((data) => {
-          console.log(data);
-          
-       })
-       .catch((err) => {
-          console.log(err.message);
-       });
-  }, []);
+    const fetchMedRecords = async () => {
+      const url = '/medrecords/' + id
+      console.log(url)
+      const response = await fetch(url)
+      const json = await response.json()
+
+      if (response.ok) {
+        setValue(json)
+      }
+    }
+
+    fetchMedRecords(id)
+  }, [id])
 
   //handles the changes when user type in input boxs. It changes the value pertaining to the input
   const handleInputChange = (e) => {
@@ -70,7 +67,7 @@ export default function UpdatePage(props) {
       <h1> Edit Exam</h1>
 
       <div className='buttonsContainer'>
-        <button className='submitButton' type="submit">Add Exam</button>
+        <button className='submitButton' type="submit">Update</button>
         <button className='cancelButton' onClick={handleClick}>Cancel</button>
       </div>
 
