@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useState, Fragment} from 'react';
-import '../../App.css';
+import '../css/admin.css';
 import data from '../../mock-data.json';
 
 
-function Admin() {
+function AdminComponent() {
     
     const [patients, setPatients] = useState(data);
 
@@ -41,4 +41,4 @@ function Admin() {
     );
 };
 
-export default Admin;
+export default AdminComponent;
