@@ -1,15 +1,47 @@
-import '../css/dashboard.css';
+import { useEffect, useState } from "react"
 
-import Search from "../Components/search.js"
+// components
+import MedRecordDetails from "../Components/MedRecordDetails"
+import Search from "../Components/search"
+
 const Exams = () => {
-    return (
-        <div className="exams">
+  const [MedRecords, setMedRecords] = useState(null)
+
+  useEffect(() => {
+    const fetchMedRecords = async () => {
+      const response = await fetch('/medrecords')
+      const json = await response.json()
+
+      if (response.ok) {
+        setMedRecords(json)
+      }
+    }
+
+    fetchMedRecords()
+  }, [])
+
+  return (
+    <div className="exams">
             <div>
             <Search placeholder="Search here..."/>
-        </div>
-        </div>
-        
-    )
+            </div>
+      <div className="MedRecords">
+      <tr>
+        <th>Patient ID</th>
+        <th>Exam ID</th>
+        <th>Image</th>
+        <th>Key Findings</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>bmi</th>
+        <th>Zip Code</th>
+      </tr>
+        {MedRecords && MedRecords.map(MedRecord => (
+          <MedRecordDetails MedRecord={MedRecord} key={MedRecord._id} />
+        ))}
+      </div>
+    </div>
+  )
 }
 
-export default Exams;
+export default Exams
