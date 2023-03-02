@@ -15,7 +15,9 @@ const createRecord = async(req,res)=>{
     Exam_id,
     ICU_Admit,
     Num_ICU_admits,
-    Mortality
+    Mortality,
+    Key_Findings,
+    Brixa_Score
 
   } = req.body
   try{
@@ -30,7 +32,9 @@ const createRecord = async(req,res)=>{
       Exam_id,
       ICU_Admit,
       Num_ICU_admits,
-      Mortality
+      Mortality,
+      Key_Findings,
+      Brixa_Score
     })
     res.status(200).json(mrecord)
   } catch(error){
