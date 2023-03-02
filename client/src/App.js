@@ -1,18 +1,26 @@
-import './App.css';
+import React from 'react';
+//import TodoList from './TodoList';
+import './App.css'
+import { BrowserRouter, Routes, Route }  from 'react-router-dom'
 
-import { useApi } from './hooks/use-api';
-
+//pages & Components
+import Create from './pages/createpage';
+import Exams from './pages/dashboard';
+import Admin from './pages/admin';
+import Navbar from './Components/Navbar';
 function App() {
-  const { response } = useApi();
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          {response}
-        </p>
-      </header>
-    </div>
+    //routing for the pages Exam/Admin and Create
+      <BrowserRouter>
+        <Navbar />
+          <div className="pages">
+            <Routes>
+                <Route path="/dashboard" element={<Exams />}/>
+                <Route path="/admin" element={<Admin />}/>
+                <Route path="/createpage" element={<Create />}/>
+            </Routes>
+          </div>
+       </BrowserRouter>
   );
 }
 

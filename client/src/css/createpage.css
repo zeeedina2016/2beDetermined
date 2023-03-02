@@ -1,0 +1,88 @@
+.create{
+    background-color: #ffffff;
+    height: 90%; /* this controls how long the navbar is*/
+    align-items: center;  
+    position: relative;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 40px 0px;
+  }
+
+  .buttonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .blueButton{
+    color: white;
+    background-color: #114973;
+    border-color: #114973;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .blueButton:hover {
+    background-color: #8bafcb;
+  }
+  .redButton{
+    color: rgb(224, 62, 62);
+    background-color: #BD2130;
+    border-color: #BD2130;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .redButton:hover{
+    background-color: #BD2130;
+  }
+  a{
+    color: grey;
+  }
+  h3{
+    font-weight: bold;
+  }
+
+  /*if you want to control size of a font in here, so as not to affect the navbar sizing, Make a div that wraps around everything in the page and reference it in the css file as '.className h1' this will only affect font size on that specific page*/
+.create h1 {
+    font-size: 300%;
+}
+  .patientInfoDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    gap: 5em;
+  }
+  .textFields{
+    width: 100%;
+    padding: 12px 8px;
+    margin: 6px 90px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+ 
+  
+  
+  
