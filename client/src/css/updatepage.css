@@ -1,0 +1,44 @@
+.form {
+    text-align: center;
+    
+}
+
+.submitButton {
+    margin-right: 10px;
+    background-color: blue;
+    border-radius: 2px;
+    border: none;
+    color: white;
+}   
+
+.cancelButton {
+    margin-left: 10px;
+    background-color: #f44336;
+    border-radius: 2px;
+    border: none;
+    color: white;
+} 
+
+.infoContainer {
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    background-color: gray;
+}
+
+.patientInfo {
+    
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: white;
+}
+.examInfo {
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: white;
+}
+
+.infoContainer input, textarea {
+    width: 70%;
+    margin-top: 10px;
+}
