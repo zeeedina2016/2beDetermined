@@ -17,6 +17,11 @@ app.use((req, res, next) => {
 })
 
 // routes
+
+app.get('/', (req, res) => {
+  res.sendStatus(200)
+})
+
 app.use('/medrecords', workoutRoutes)
 
 // connect to db
