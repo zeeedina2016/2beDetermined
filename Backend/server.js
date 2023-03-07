@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+const cors = require('cors');
 const express = require('express')
 const mongoose = require('mongoose')
 const workoutRoutes = require('./routes/medrecords')
@@ -12,11 +12,10 @@ const app = express()
 // middleware
 app.use(express.json())
 
-app.use(
-  cors({
-    origin: ["https://atmedtrack.onrender.com","http://localhost:3000"],
-  })
-)
+
+app.use(cors({
+    origin: ['http/localhost:3000', 'https://atmedtrack.onrender.com']
+}));
 
 app.use((req, res, next) => {
   console.log(req.path, req.method)
