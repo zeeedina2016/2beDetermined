@@ -8,8 +8,15 @@ var indexRouter = require('../Backend/routes/index');
 // express app
 const app = express()
 
+
 // middleware
 app.use(express.json())
+
+app.use(
+  cors({
+    origin: ["https://atmedtrack.onrender.com","http://localhost:3000"],
+  })
+)
 
 app.use((req, res, next) => {
   console.log(req.path, req.method)
