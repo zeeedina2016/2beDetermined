@@ -14,7 +14,7 @@ app.use(express.json())
 
 
 app.use(cors({
-    origin: ['http/localhost:3000', 'https://atmedtrack.onrender.com']
+    origin: ['http://localhost:3000', 'https://atmedtrack.onrender.com']
 }));
 
 app.use((req, res, next) => {
