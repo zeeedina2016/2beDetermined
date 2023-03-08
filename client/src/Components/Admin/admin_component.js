@@ -1,16 +1,33 @@
-import React, {useContext, useEffect, useState, Fragment} from 'react';
-import '../css/admin.css';
-import data from '../../mock-data.json';
+import React, {useEffect, useState} from 'react';
+import '../../css/admin.css';
+import '../search.css';
+import { Button } from 'react';
+
+import MedRecordDetails from "../MedRecordDetails.js"
+
+const Home = () => {
+  const [medrecords, setMedRecords] = useState(null)
 
 
-function AdminComponent() {
-    
-    const [patients, setPatients] = useState(data);
+useEffect(() => {
+    const fetchMedRecords = async () => {
+        const response = await fetch('/medrecords/')
+        const json = await response.json()
+ 
+        if (response.ok) {
+            setMedRecords(json)
+        } 
+    }
 
-    return (
-        <div className="app-container">
-            <h1>Admin Dashboard</h1>
-            <table>
+fetchMedRecords()
+}, [])
+
+
+return (
+
+    <div className="table">
+        <h1 font-size="larger" class="admin-component-title" align="left">Admin Dashboard</h1>
+        <table id='tablepadding'>
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -19,26 +36,53 @@ function AdminComponent() {
                         <th>Age</th>
                         <th>Sex</th>
                         <th>BMI</th>
-                        <th>Zip Code</th>
+                        <th>Weight</th>
+                        <th>Zip</th>
                         <th>Edit Delete</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {patients.map((patient)=> (                    
-                        <tr>
-                            <td>{patient.patientid}.</td>
-                            <td>{patient.examid}</td>
-                            <td>{patient.keyfindings}</td>
-                            <td>{patient.age}</td>
-                            <td>{patient.sex}</td>
-                            <td>{patient.bmi}</td>
-                            <td>{patient.zipcode}</td>
-                        </tr>
-                     ))}
-                </tbody>
-            </table>
-        </div>
-    );
-};
+        <tbody>
+        {medrecords && medrecords.map((MedRecord) => (
+            <tr>
+                <td>
+                    {MedRecord.Exam_id}
+                </td>
+                <td>
+                    {MedRecord.Patient_ID}
+                </td>
+                <td>
+                    {MedRecord.keyfindings}
+                </td>
+                <td>
+                    {MedRecord.Age}
+                </td>
+                <td>
+                    {MedRecord.Sex}
+                </td>
+                <td>
+                    {MedRecord.Latest_BMI}
+                </td>
+                <td>
+                    {MedRecord.Weight}
+                </td>
+                <td>
+                    {MedRecord.Zip}
+                </td>
+                <td>
+                    {MedRecord.Zip}
+                </td>
+                <td>
+                    {MedRecord.Zip}
+                </td>
+                
 
-export default AdminComponent;
+
+
+            </tr>
+        ))}
+        </tbody>
+        </table>
+    </div>
+    )   
+}
+export default Home
