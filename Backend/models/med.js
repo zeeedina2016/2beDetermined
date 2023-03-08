@@ -24,7 +24,7 @@ const medSchema = new Schema({
     },
     Latest_Weight: {
         type: Number,
-        required: true
+        required: false
     },
     Png_Filename: {
         type: String,
@@ -36,15 +36,15 @@ const medSchema = new Schema({
     },
     ICU_Admit: {
         type: String,
-        required: true
+        required: false
     },
     Num_ICU_admits: {
         type: Number,
-        required: true
+        required: false
     },
     Mortality: {
         type: String,
-        required: true
+        required: false
     },
     Key_Findings:{
         type: String,
