@@ -1,44 +1,101 @@
-.form {
+.form{
+    background-color: #ffffff;
+    height: 90%; /* this controls how long the navbar is*/
+    align-items: center;  
+    position: relative;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 40px 0px;
+  }
+
+  .wrapper img{
+    margin: auto;
+    display: flex;
+    width:10em;
+    height:6em;
+  }
+  .form h2{
+   color: #114973;
+   text-align: center;
+  }
+  .form label{
+    color: #114973;
+  
+  }
+
+  .buttonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .submitButton{
+    color: white;
+    background-color: #114973;
+    border-color: #114973;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 90px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0px;
     
-}
-
-.submitButton {
-    margin-right: 10px;
-    background-color: blue;
-    border-radius: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .submitButton:hover {
+    background-color: #8bafcb;
+  }
+  .cancelButton{
+    color: rgb(224, 62, 62);
+    background-color: #BD2130;
+    border-color: #BD2130;
     border: none;
+    border-radius: 10px;
     color: white;
-}   
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .cancelButton:hover{
+    background-color: #BD2130;
+  }
+  a{
+    color: grey;
+  }
+  h3{
+    font-weight: bold;
+  }
 
-.cancelButton {
-    margin-left: 10px;
-    background-color: #f44336;
-    border-radius: 2px;
-    border: none;
-    color: white;
-} 
-
-.infoContainer {
+  /*if you want to control size of a font in here, so as not to affect the navbar sizing, Make a div that wraps around everything in the page and reference it in the css file as '.className h1' this will only affect font size on that specific page*/
+.form h1 {
+    font-size: 300%;
+}
+  .infoContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+    gap: 5em;
+  }
+  .textFields{
+    width: 300px;
+    padding: 3%;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
     
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    background-color: gray;
-}
-
-.patientInfo {
-    
-    margin-left: 0%;
-    margin-right: 0%;
-    background-color: white;
-}
-.examInfo {
-    margin-right: 0%;
-    margin-left: 0%;
-    background-color: white;
-}
-
-.infoContainer input, textarea {
-    width: 70%;
-    margin-top: 10px;
-}
+  }

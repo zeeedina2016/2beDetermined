@@ -1,8 +1,12 @@
 import '../css/updatepage.css';
+//import logo from "../medlogo.png";
 
 import React, { useEffect } from "react";
+import { useParams, useNavigate } from 'react-router-dom'
 
-export default function UpdatePage(props) {
+export default function UpdatePage() {
+
+  const navigate = useNavigate();
 
   // Sets up initial values. TODO: Use patient id and exam id to fill out info
   const [values, setValues] = React.useState({
@@ -18,11 +22,11 @@ export default function UpdatePage(props) {
     Brixa_Score: ""
   })
 
-  const id = props.id
-
+  const {id} = useParams()
+  
   useEffect(() => {
     const fetchMedRecords = async () => {
-      const url = '/medrecords/' + id
+      const url = "https://atmedrecordsbackend.onrender.com/medrecords/" + id
       const response = await fetch(url)
       const json = await response.json()
 
@@ -42,6 +46,8 @@ export default function UpdatePage(props) {
           Brixa_Score: (json.Brixa_Score == undefined) ? "": json.Brixa_Score, 
         })
         
+      } else {
+        console.log("error happened")
       }
     }
 
@@ -61,7 +67,7 @@ export default function UpdatePage(props) {
   async function handleSubmit(e) {
     e.preventDefault();
    
-    const url = '/medrecords/' + id
+    const url = "https://atmedrecordsbackend.onrender.com/medrecords/"  + id
     const response = await fetch(url, {
       method: 'PATCH', 
       body: JSON.stringify(values), 
@@ -73,6 +79,8 @@ export default function UpdatePage(props) {
 
     if (response.ok) {
       console.log("patch request successful")
+      console.log(json)
+      navigate("/admin")
     }
 
   }
@@ -81,103 +89,95 @@ export default function UpdatePage(props) {
   function handleClick(e) {
     e.preventDefault();
     console.log("cancel");
+    navigate("/admin")
   }
 
   return (  
     // All of this is the various components of the form. Still need to style thought
     <div className='form'>
     <form onSubmit={handleSubmit}>
-      <h1> Edit Exam</h1>
 
-      <div className='buttonsContainer'>
-        <button className='submitButton' type="submit">Update</button>
-        <button className='cancelButton' onClick={handleClick}>Cancel</button>
+      <div className="wrapper"> 
+        {/* <img src={logo} alt="medlogo" /> */}
+        <h2>EDIT PAGE</h2>
       </div>
 
       <div class='infoContainer'>
       <div className="patientInfo">
         <h2> Patient Info</h2>
 
-        <label>
-        <b>Patient ID:</b> <br/>
-        <input type="text" name="Patient_ID" value={values.Patient_ID} onChange={handleInputChange}/>
-        </label>
-        <br/>
+        <label> Patient ID: </label>
+        <div>
+          <input className="textFields" type="text" name="Patient_ID" value={values.Patient_ID} onChange={handleInputChange}/>
+        </div>
+          
+        <label>Age:</label>
+        <div>
+          <input className="textFields" type="text" name="Age" value={values.Age} onChange={handleInputChange}/>
+        </div>
+       
+        <label>Sex:</label>
+        <div>
+          <input className="textFields" type="text" name="Sex" value={values.Sex} onChange={handleInputChange}/>
+        </div>
 
-        <br/>
-        <label>
-        <b>Age:</b><br/>
-        <input type="text" name="Age" value={values.Age} onChange={handleInputChange}/>
-        </label>
-        <br/>
-
-        <br/>
-        <label>
-        <b>Sex:</b><br/>
-        <input type="text" name="Sex" value={values.Sex} onChange={handleInputChange}/>
-        </label>
-        <br/>
-
-        <br/>
-        <label>
-        <b>BMI:</b><br/>
-        <input type="text" name="Latest_BMI" value={values.Latest_BMI} onChange={handleInputChange}/>
-        </label>
-        <br/>
-
-        <br/>
-        <label>
-        <b>Zipcode:</b><br/>
-        <input type="text" name="Zip" value={values.Zip} onChange={handleInputChange}/>
-        </label>
-        <br/>
+        <label>BMI:</label>
+        <div>
+          <input className="textFields" type="text" name="Latest_BMI" value={values.Latest_BMI} onChange={handleInputChange}/>
+        </div>
+      
+        <label>Zipcode:</label>
+        <div>
+          <input className="textFields" type="text" name="Zip" value={values.Zip} onChange={handleInputChange}/>
+        </div>
+        
+      
       
       </div>
 
       <div className="examInfo">
         <h2> Exam Info</h2>
 
-        <label>
-        <b>Exam ID:</b> <br/>
-        <input type="text" name="Exam_id" value={values.Exam_id} onChange={handleInputChange}/>
-        </label>
-        <br/>
+        <label>Exam ID:</label>
+        <div>
+        <input className="textFields" type="text" name="Exam_id" value={values.Exam_id} onChange={handleInputChange}/>
+        </div>
+        
+      
 
-        <br/>
-        <label>
-        <b>Image URL:</b><br/>
-        <input type="text" name="Png_Filename" value={values.Png_Filename} onChange={handleInputChange}/>
-        </label>
-        <br/>
+        <label>Image URL:</label>
+        <div>
+        <input className="textFields" type="text" name="Png_Filename" value={values.Png_Filename} onChange={handleInputChange}/>
+        </div>
+        
 
-        <br/>
+        <div>
         <img src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + values.Png_Filename} alt="" width={250} height={250}/>
-        <br/>
-
-        <br/>
-        <label>
-        <b>Date:</b><br/>
-        <input type="text" name="Date" value={values.Date} onChange={handleInputChange}/>
-        </label>
-        <br/>
-
-        <br/>
-        <label>
-        <b>Key Findings:</b><br/>
-        <textarea name="Key_Findings" value={values.Key_Findings} onChange={handleInputChange}/>
-        </label>
-        <br/>
-
-        <br/>
-        <label>
-        <b>Brixia Score (separated by commas):</b><br/>
-        <input type="text" name="Brixa_Score" value={values.Brixa_Score} onChange={handleInputChange}/>
-        </label>
-        <br/>
-        <br/>
+        </div>
+        
+ 
+        <label>Date:</label>
+        <div>
+        <input className="textFields" type="text" name="Date" value={values.Date} onChange={handleInputChange}/>
+        </div>
+          
+        <label>Key Findings:</label>
+        <div>
+        <textarea className="textFields" name="Key_Findings" value={values.Key_Findings} onChange={handleInputChange}/>
+        </div>
+        
+        <label>Brixia Score (separated by commas):</label>
+        <div>
+        <input className="textFields" type="text" name="Brixa_Score" value={values.Brixa_Score} onChange={handleInputChange}/>
+        </div>
+     
       
       </div>
       </div> 
+      <div className='buttonsContainer'>
+        <button className='submitButton' type="submit">Update</button>
+        <button className='cancelButton' onClick={handleClick}>Cancel</button>
+      </div>
     </form>
     </div>
   );

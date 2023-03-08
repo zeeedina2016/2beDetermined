@@ -8,6 +8,8 @@ import Create from './pages/createpage';
 import Exams from './pages/dashboard';
 import Admin from './pages/admin';
 import Navbar from './Components/Navbar';
+import UpdatePage from './pages/updatepage';
+
 function App() {
   return (
     //routing for the pages Exam/Admin and Create
@@ -17,7 +19,8 @@ function App() {
             <Routes>
                 <Route path="/dashboard" element={<Exams />}/>
                 <Route path="/admin" element={<Admin />}/>
-                <Route path="/createpage" element={<Create />}/>
+                <Route path="/createpage" element={<UpdatePage />}/>
+                <Route path="/admin/:id" element={<UpdatePage  />}/>
             </Routes>
           </div>
        </BrowserRouter>

@@ -4,10 +4,13 @@ import data from "../mock-data.json";
 import ReadOnlyRow from '../Components/read-only-row';
 import EditableRow from '../Components/editable-row';
 import '../css/admin.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Admin() {
+
+    const navigate = useNavigate();
 
     const [patients, setPatients] = useState(data);
     const [addFormData, setAddFormData] = useState({
@@ -110,21 +113,8 @@ function Admin() {
 
     const handleEditClick = (event, patient) => {
         event.preventDefault();
-        setEditPatientId(patient.id);
-
-        const formValues = {
-            patientid: patient.patientid,
-            examid: patient.examid,
-            keyfindingsid: patient.keyfindingsid,
-            brixiascores: patient.brixiascores,
-            age: patient.age,
-            sex: patient.sex,
-            bmi: patient.bmi,
-            zipcode: patient.zipcode,
-
-        }
-
-        setEditFormData(formValues);
+        console.log("edit");
+        navigate("/admin/64024a371bfa3c2870dcd93d")        
     };
 
     const handleCancelClick = () => {
