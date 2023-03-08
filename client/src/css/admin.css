@@ -10,7 +10,7 @@
   
   .admin-component-title,
   .newpatient, .createbutton {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: larger;
     display: flex;
     margin: 1em;
@@ -49,16 +49,21 @@
   
 
   table {
+    border: collapse;
     border-collapse: collapse;
     width: 98%;
     margin-left:auto;
     margin-right:auto;
     margin-top:20px;
-    padding: 5em;
+    font-size: smaller;
   }
 
+
   .table {
+    max-height: 70vh;
     border-collapse: collapse;
+    border: collapse;
+    overflow: scroll;
     width: 98%;
     margin-left:auto;
     margin-right:auto;
@@ -245,4 +250,20 @@
     opacity: 1;
     transition: all 0.5s ease;
   }
+}
+
+.update-button {
+  text-size-adjust: small;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #114973;
+  padding: .25em;
+}
+
+.update-button:hover {
+    text-size-adjust: auto;
+    text-decoration: none;
+    background-color:#eaeef1;
+    color: #114973;
+    padding: 2px 6px 2px 6px;
 }

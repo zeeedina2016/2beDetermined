@@ -27,7 +27,7 @@ return (
 
     <div className="table">
         <h1 font-size="larger" class="admin-component-title" align="left">Admin Dashboard</h1>
-        <table id='tablepadding'>
+        <table className='admintable'>
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -69,14 +69,10 @@ return (
                     {MedRecord.Zip}
                 </td>
                 <td>
-                    {MedRecord.Zip}
+                    <a class="update-button" href={"http://localhost:3000/admin/" + MedRecord.Patient_ID}>
+                    UPDATE
+                    </a>
                 </td>
-                <td>
-                    {MedRecord.Zip}
-                </td>
-                
-
-
 
             </tr>
         ))}
