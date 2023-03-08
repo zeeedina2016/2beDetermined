@@ -19,13 +19,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/medrecords', workoutRoutes)
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, './client/public/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
