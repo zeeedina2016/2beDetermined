@@ -1,40 +1,42 @@
 import '../css/createpage.css';
+import logo from "../medlogo.png";
 
 function Create() {
   return (
     <>
       <div className="create">
-        <h1>CREATE EXAM</h1>
-        <div className='buttonsContainer'>
-          <button className="blueButton">Add Exam</button>
-          <button className="blueButton">Random Exam</button>
-          <button className="redButton">Cancel</button>
+        <div className="wrapper"> 
+        <img src={logo} alt="medlogo" />
+        <h2>CREATE PAGE</h2>
         </div>
         
         <div className='patientInfoDiv'>
           <div>
             <h2>Patient Info</h2>
-            <h3>Patient ID:</h3>
+        
+            <label>Patient ID:</label>
+            <div>
+              <input className="textFields" type="text"></input>
+            </div>
+    
+            
+            
+            <label>Age:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
             
-            <h3>Age:</h3>
+            <label>Sex:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
             
-            <h3>Sex:</h3>
+            <label>BMI:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
             
-            <h3>BMI:</h3>
-            <div>
-              <input className="textFields" type="text"></input>
-            </div>
-            
-            <h3>Zip Code:</h3>
+            <label>Zip Code:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
@@ -43,12 +45,12 @@ function Create() {
           
           <div>
           <h2>Exam Info</h2>
-          <h3>Exam ID:</h3>
+          <label>Exam ID:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
             
-            <h3>Image URL:</h3>
+            <label>Image URL:</label>
             <div>
               <input className="textFields" type="text"></input>
             </div>
@@ -57,12 +59,17 @@ function Create() {
             <div>
               <input className="textFields" type="text"></input>
             </div>
-            <h3>Key Findings:</h3>
+            <label>Key Findings:</label>
             <div >
               <input className="textFields" type="text"></input>
             </div>
         </div>
         </div>
+        <div className='buttonsContainer'>
+          <button className="blueButton">Add Exam</button>
+          <button className="redButton">Cancel</button>
+        </div>
+
       </div>
      
     </>
