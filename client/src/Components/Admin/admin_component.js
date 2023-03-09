@@ -38,7 +38,7 @@ return (
                         <th>BMI</th>
                         <th>Weight</th>
                         <th>Zip</th>
-                        <th>Edit Delete</th>
+                        <th>Update</th>
                     </tr>
                 </thead>
         <tbody>
@@ -69,7 +69,7 @@ return (
                     {MedRecord.Zip}
                 </td>
                 <td>
-                    <a class="update-button" href={"http://localhost:3000/admin/" + MedRecord.Patient_ID}>
+                    <a class="update-button" href={"http://localhost:3000/admin/" + MedRecord._id}>
                     UPDATE
                     </a>
                 </td>
