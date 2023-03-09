@@ -121,7 +121,7 @@ export default function Create()
         </div>
         <div className='buttonsContainer'>
           <button className="blueButton" type='submit'>Add Exam</button>
-          <button className="redButton">Cancel</button>
+          <button className="redButton" onClick={handleClick}>Cancel</button>
         </div>
       </form>
     </div>
