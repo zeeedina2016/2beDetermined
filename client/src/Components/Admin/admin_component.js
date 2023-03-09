@@ -49,7 +49,7 @@ return (
                     {MedRecord.Exam_id}
                 </td>
                 <td>
-                    {MedRecord.Key_Findings}
+                <img src={image+MedRecord.Png_Filename}alt="new"/>
                 </td>
                 <td>
                     {MedRecord.Age}

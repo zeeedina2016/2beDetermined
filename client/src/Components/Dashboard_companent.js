@@ -61,9 +61,6 @@ return (
                     {MedRecord.Latest_BMI}
                 </td>
                 <td>
-                    {MedRecord.Latest_Weight}
-                </td>
-                <td>
                     {MedRecord.Zip}
                 </td>
               
