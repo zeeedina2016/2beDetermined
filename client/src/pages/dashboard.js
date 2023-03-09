@@ -1,15 +1,28 @@
 import '../css/dashboard.css';
+import Dash from "../Components/Dashboard_companent.js";
+import Search from "../Components/search.js";
 
-import Search from "../Components/search.js"
-const Exams = () => {
-    return (
-        <div className="exams">
-            <div>
-            <Search placeholder="Search here..."/>
-        </div>
-        </div>
-        
-    )
+function Dashboard() {
+  //const { response } = useApi();
+  
+  return (
+    <><><div className='search-container'>
+      <Search placeholder="Search..." />
+    </div>
+
+      <div className="App">
+
+        <header className="App-header">
+          <p>
+            <Dash/>
+          </p>
+        </header>
+
+      </div></>
+      
+     
+      </>
+  );
 }
 
-export default Exams;
+  export default Dashboard;
