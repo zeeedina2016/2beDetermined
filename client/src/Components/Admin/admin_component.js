@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/admin.css';
 import '../search.css';
-
+var image = "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/"
 
 const Home = () => {
   const [medrecords, setMedRecords] = useState(null)
@@ -35,7 +35,6 @@ return (
                         <th>Age</th>
                         <th>Sex</th>
                         <th>BMI</th>
-                        <th>Weight</th>
                         <th>Zip</th>
                         <th>Edit Delete</th>
                     </tr>
@@ -60,9 +59,6 @@ return (
                 </td>
                 <td>
                     {MedRecord.Latest_BMI}
-                </td>
-                <td>
-                    {MedRecord.Latest_Weight}
                 </td>
                 <td>
                     {MedRecord.Zip}
