@@ -1,5 +1,4 @@
 import '../css/dashboard.css';
-
 import Search from "../Components/search.js"
 const Exams = () => {
     return (

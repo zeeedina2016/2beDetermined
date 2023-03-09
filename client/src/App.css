@@ -44,17 +44,13 @@ h2 {
   color: #61dafb;
 }
 
-.page {
-  background-color: black;
-}
-
 .col1_H {
   position: absolute;
   width: 245px;
   height: 31px;
   left: 67px;
   top: 216px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -68,7 +64,7 @@ h2 {
   height: 31px;
   left: 68px;
   top: 267px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -82,7 +78,7 @@ h2 {
   height: 31px;
   left: 72px;
   top: 298px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -96,7 +92,7 @@ h2 {
   height: 31px;
   left: 70px;
   top: 335px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -110,7 +106,7 @@ h2 {
   height: 31px;
   left: 72px;
   top: 365px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -124,7 +120,7 @@ h2 {
   height: 31px;
   left: 68px;
   top: 399px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -138,7 +134,7 @@ h2 {
   height: 32px;
   left: 68px;
   top: 417px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -151,7 +147,7 @@ h2 {
   height: 31px;
   left: 68px;
   top: 463px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -165,7 +161,7 @@ h2 {
   height: 32px;
   left: 68px;
   top: 482px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -178,7 +174,7 @@ h2 {
   height: 31px;
   left: 70px;
   top: 534px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -192,7 +188,7 @@ h2 {
   height: 32px;
   left: 70px;
   top: 555px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -205,7 +201,7 @@ h2 {
   height: 29.9px;
   left: 489.15px;
   top: 212.43px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -220,6 +216,11 @@ h2 {
   left: 700.39px;
   top: 234.62px;
   background: #D8E2E9;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .examID_H {
@@ -228,7 +229,7 @@ h2 {
   height: 29.9px;
   left: 518.09px;
   top: 543.28px;
-  font-family: 'Arimo';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -242,6 +243,91 @@ h2 {
   height: 29.9px;
   left: 521.94px;
   top: 573.18px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.date_H {
+  position: absolute;
+  width: 236.32px;
+  height: 29.9px;
+  left: 518.09px;
+  top: 607.9px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.date {
+  /* NEED TO CHANGE POS! */
+  position: absolute;
+  width: 284.55px;
+  height: 30.87px;
+  left: 518.09px;
+  top: 640.09px;
+  background: #FFFFFF;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.url_H {
+  position: absolute;
+  width: 236.32px;
+  height: 29.9px;
+  left: 521.94px;
+  top: 683.14px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.url {
+  position: absolute;
+  width: 284.55px;
+  height: 30.87px;
+  left: 521.94px;
+  top: 702.43px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* background: #FFFFFF; */
+}
+
+.keyFindings_H {
+  position: absolute;
+  width: 236.32px;
+  height: 30.87px;
+  left: 875.94px;
+  top: 543.28px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8BAFCB;
+}
+
+.keyFindings {
+  position: absolute;
+  width: 236.32px;
+  height: 56px;
+  left: 886px;
+  top: 579px;
   font-family: 'Arimo';
   font-style: normal;
   font-weight: 400;
@@ -250,23 +336,22 @@ h2 {
   color: #000000;
 }
 
-.col1 {
+.col1_Block {
   position: absolute;
   width: 325px;
   height: 649px;
   left: 55px;
   top: 197px;
   background-color: #EAEEF1;
-
 }
 
 .col2 {
-  position: absolute;
+  /* position: absolute;
   width: 762.97px;
   height: 626px;
   left: 466px;
   top: 197px;
-  background: #EAEEF1;
+  background: #EAEEF1; */
 }
 
 .colHeader {
@@ -302,7 +387,7 @@ h2 {
   color: white;
 }
 
- pages{
+ pages {
     margin-top: 10%;
     color: #e7195a;
     text-align: center;
