@@ -1,7 +1,15 @@
 import '../css/createpage.css';
 import logo from "../medlogo.png";
 
+
+
+
+
+
+
 function Create() {
+
+  
   return (
     <>
       <div className="create">
