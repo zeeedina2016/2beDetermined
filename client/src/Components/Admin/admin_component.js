@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import '../../css/admin.css';
 import '../search.css';
 
@@ -67,9 +68,9 @@ return (
                     {MedRecord.Zip}
                 </td>
                 <td>
-                    <a class="update-button" href={"http://localhost:3000/admin/" + MedRecord._id}>
-                    UPDATE
-                    </a>
+                    <Link to={`/admin/${MedRecord._id}`}>
+                     <button class="update-button">UPDATE</button>
+                    </Link>
                 </td>
 
             </tr>
