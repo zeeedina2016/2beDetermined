@@ -60,37 +60,37 @@ export default function Create()
   
   return (
     <div className="create">
-      <h1>CREATE EXAM</h1>
-        <form onSubmit={handleSubmit}>
-        <div className='buttonsContainer'>
-          <button className="blueButton" type='submit'>Add Exam</button>
-          <button className="redButton">Cancel</button>
+        <h2>CREATE PAGE</h2>
+        <div className="wrapper"> 
+        <img src={logo} alt="medlogo" />
         </div>
-        
+
+        <form onSubmit={handleSubmit}>
         <div className='patientInfoDiv'>
           <div>
             <h2>Patient Info</h2>
-            <h3>Patient ID:</h3>
+
+            <label>Patient ID:</label>
             <div>
               <input name='Patient_ID' className="textFields" value={values.Patient_ID} onChange={handleInputChange}></input>
             </div>
             
-            <h3>Age:</h3>
+            <label>Age:</label>
             <div>
               <input name='Age' className="textFields" value={values.Age} onChange={handleInputChange}></input>
             </div>
             
-            <h3>Sex:</h3>
+            <label>Sex:</label>
             <div>
               <input name='Sex' className="textFields" value={values.Sex} onChange={handleInputChange}></input>
             </div>
             
-            <h3>BMI:</h3>
+            <label>BMI:</label>
             <div>
               <input name='Latest_BMI' className="textFields" value={values.Latest_BMI} onChange={handleInputChange}></input>
             </div>
             
-            <h3>Zip Code:</h3>
+            <label>Zip Code:</label>
             <div>
               <input name='Zip' className="textFields" value={values.Zip} onChange={handleInputChange}></input>
             </div>
@@ -98,12 +98,12 @@ export default function Create()
           
           <div>
             <h2>Exam Info</h2>
-            <h3>Exam ID:</h3>
+            <label>Exam ID:</label>
             <div>
               <input name='Exam_id' className="textFields" value={values.Exam_id} onChange={handleInputChange}></input>
             </div>
             
-            <h3>Image URL:</h3>
+            <label>Image URL:</label>
             <div>
               <input name='Png_Filename' className="textFields" value={values.Png_Filename} onChange={handleInputChange}></input>
             </div>
@@ -112,11 +112,15 @@ export default function Create()
             <div>
               <input name='Brixa_Score' className="textFields" value={values.Brixa_Score} onChange={handleInputChange}></input>
             </div>
-            <h3>Key Findings:</h3>
+            <label>Key Findings:</label>
             <div >
               <input name='Key_Findings' className="textFields" value={values.Key_Findings} onChange={handleInputChange}></input>
             </div>
           </div>
+        </div>
+        <div className='buttonsContainer'>
+          <button className="blueButton" type='submit'>Add Exam</button>
+          <button className="redButton">Cancel</button>
         </div>
       </form>
     </div>
