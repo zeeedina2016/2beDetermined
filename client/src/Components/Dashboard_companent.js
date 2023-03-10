@@ -35,7 +35,6 @@ return (
                         <th>Age</th>
                         <th>Sex</th>
                         <th>BMI</th>
-                        <th>Weight</th>
                         <th>Zip</th>
                 
                     </tr>
