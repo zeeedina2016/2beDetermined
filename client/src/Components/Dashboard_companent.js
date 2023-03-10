@@ -45,7 +45,9 @@ return (
                     {MedRecord.Patient_ID}
                 </td>
                 <td>
+                    <Link to={`/exam/${MedRecord._id}`}>
                     {MedRecord.Exam_id}
+                    </Link>
                 </td>
                 <td>
                 <img src={image+MedRecord.Png_Filename}alt="new"/>

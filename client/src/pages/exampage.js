@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import '../css/exampage.css';
+import { useParams } from 'react-router-dom';
 
 function Exam(props) {
     const [patient, setPatient] = useState({
@@ -16,7 +17,7 @@ function Exam(props) {
         Brixa_Score: "",
     });
 
-    const id = props.id
+    const {id} = useParams()
 
     useEffect(() => {
         const fetchMedRecords = async () => {
