@@ -6,12 +6,13 @@
  
          return (
            <div class="newpatientcomponent">
-             <h1 class="newpatient">
+            
+            <h1 class="newpatient">
                New Patient
             </h1>
             
              <Link to="/createpage"><button class="createbutton">
-               Create
+               CREATE
              </button>
              </Link>
            </div>

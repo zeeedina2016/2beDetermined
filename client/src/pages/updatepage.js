@@ -94,90 +94,95 @@ export default function UpdatePage() {
 
   return (  
     // All of this is the various components of the form. Still need to style thought
+    
     <div className='form'>
-    <form onSubmit={handleSubmit}>
 
+    
+        
+      <h2>EDIT PAGE</h2>
       <div className="wrapper"> 
         <img src={logo} alt="medlogo" />
-        <h2>EDIT PAGE</h2>
       </div>
 
+      <form onSubmit={handleSubmit}>
       <div class='infoContainer'>
-      <div className="patientInfo">
-        <h2> Patient Info</h2>
+        <div className="patientInfo">
+          <h2> Patient Info</h2>
 
-        <label> Patient ID: </label>
-        <div>
-          <input className="textFields" type="text" name="Patient_ID" value={values.Patient_ID} onChange={handleInputChange}/>
-        </div>
+          <label> Patient ID: </label>
+          <div>
+            <input className="textFields" type="text" name="Patient_ID" value={values.Patient_ID} onChange={handleInputChange}/>
+          </div>
+            
+          <label>Age:</label>
+          <div>
+            <input className="textFields" type="text" name="Age" value={values.Age} onChange={handleInputChange}/>
+          </div>
+        
+          <label>Sex:</label>
+          <div>
+            <input className="textFields" type="text" name="Sex" value={values.Sex} onChange={handleInputChange}/>
+          </div>
+
+          <label>BMI:</label>
+          <div>
+            <input className="textFields" type="text" name="Latest_BMI" value={values.Latest_BMI} onChange={handleInputChange}/>
+          </div>
+        
+          <label>Zipcode:</label>
+          <div>
+            <input className="textFields" type="text" name="Zip" value={values.Zip} onChange={handleInputChange}/>
+          </div>
           
-        <label>Age:</label>
-        <div>
-          <input className="textFields" type="text" name="Age" value={values.Age} onChange={handleInputChange}/>
-        </div>
-       
-        <label>Sex:</label>
-        <div>
-          <input className="textFields" type="text" name="Sex" value={values.Sex} onChange={handleInputChange}/>
-        </div>
-
-        <label>BMI:</label>
-        <div>
-          <input className="textFields" type="text" name="Latest_BMI" value={values.Latest_BMI} onChange={handleInputChange}/>
-        </div>
-      
-        <label>Zipcode:</label>
-        <div>
-          <input className="textFields" type="text" name="Zip" value={values.Zip} onChange={handleInputChange}/>
-        </div>
         
-      
-      
-      </div>
-
-      <div className="examInfo">
-        <h2> Exam Info</h2>
-
-        <label>Exam ID:</label>
-        <div>
-        <input className="textFields" type="text" name="Exam_id" value={values.Exam_id} onChange={handleInputChange}/>
-        </div>
         
-      
+        </div>
 
-        <label>Image URL:</label>
-        <div>
-        <input className="textFields" type="text" name="Png_Filename" value={values.Png_Filename} onChange={handleInputChange}/>
-        </div>
-        
+        <div className="examInfo">
+          <h2> Exam Info</h2>
 
-        <div>
-        <img src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + values.Png_Filename} alt="" width={250} height={250}/>
-        </div>
-        
- 
-        <label>Date:</label>
-        <div>
-        <input className="textFields" type="text" name="Date" value={values.Date} onChange={handleInputChange}/>
-        </div>
+          <label>Exam ID:</label>
+          <div>
+          <input className="textFields" type="text" name="Exam_id" value={values.Exam_id} onChange={handleInputChange}/>
+          </div>
           
-        <label>Key Findings:</label>
-        <div>
-        <textarea className="textFields" name="Key_Findings" value={values.Key_Findings} onChange={handleInputChange}/>
-        </div>
         
-        <label>Brixia Score (separated by commas):</label>
-        <div>
-        <input className="textFields" type="text" name="Brixa_Score" value={values.Brixa_Score} onChange={handleInputChange}/>
-        </div>
-     
+
+          <label>Image URL:</label>
+          <div>
+          <input className="textFields" type="text" name="Png_Filename" value={values.Png_Filename} onChange={handleInputChange}/>
+          </div>
+          
+
+          <div>
+          <img src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + values.Png_Filename} alt="" width={250} height={250}/>
+          </div>
+          
+  
+          <label>Date:</label>
+          <div>
+          <input className="textFields" type="text" name="Date" value={values.Date} onChange={handleInputChange}/>
+          </div>
+            
+          <label>Key Findings:</label>
+          <div>
+          <textarea className="textFields" name="Key_Findings" value={values.Key_Findings} onChange={handleInputChange}/>
+          </div>
+          
+          <label>Brixia Score (separated by commas):</label>
+          <div>
+          <input className="textFields" type="text" name="Brixa_Score" value={values.Brixa_Score} onChange={handleInputChange}/>
+          </div>
       
-      </div>
+        
+        </div>
       </div> 
+      
       <div className='buttonsContainer'>
         <button className='submitButton' type="submit">Update</button>
         <button className='cancelButton' onClick={handleClick}>Cancel</button>
       </div>
+    
     </form>
     </div>
   );

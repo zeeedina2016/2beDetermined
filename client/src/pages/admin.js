@@ -15,9 +15,12 @@ function Admin() {
       <div className="App">
 
         <header className="App-header">
-          <p>
-            <Home />
+          <p className="pDiv" id='table'>
+            <h1 class="admin-component-title" align="left">Admin Dashboard</h1>
           </p>
+          
+            <Home />
+
           <CreateButton />
         </header>
         

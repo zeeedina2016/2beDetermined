@@ -61,6 +61,7 @@ export default function Create()
   
   return (
     <div className="create">
+
         <h2>CREATE PAGE</h2>
         <div className="wrapper"> 
         <img src={logo} alt="medlogo" />
@@ -119,9 +120,10 @@ export default function Create()
             </div>
           </div>
         </div>
+        
         <div className='buttonsContainer'>
-          <button className="blueButton" type='submit'>Add Exam</button>
-          <button className="redButton" onClick={handleClick}>Cancel</button>
+          <button className="blueButton" type='submit'>ADD EXAM</button>
+          <button className="redButton" onClick={handleClick}>CANCEL</button>
         </div>
       </form>
     </div>
