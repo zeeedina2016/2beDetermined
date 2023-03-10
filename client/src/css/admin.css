@@ -54,7 +54,6 @@
     width: 98%;
     margin-left:auto;
     margin-right:auto;
-    margin-top:20px;
     font-size: smaller;
   }
 
@@ -71,9 +70,6 @@
     background-color: rgb(255, 255, 255);
 
   }
-#tablepadding {
-  padding:
-}
 
 .table-div {
     border-collapse: collapse;
@@ -140,7 +136,7 @@
     border-radius: 2px;
     display: flex;
   }
-  
+
   .search input{
     display: flex;
     align-items: center;
