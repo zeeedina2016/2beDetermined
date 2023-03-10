@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route }  from 'react-router-dom'
 
 //pages & Components
 import Create from './pages/createpage';
-import Exams from './pages/dashboard';
+import Dashboard from './pages/dashboard';
 import Admin from './pages/admin';
 import Navbar from './Components/Navbar';
 import UpdatePage from './pages/updatepage';
@@ -17,7 +17,7 @@ function App() {
         <Navbar />
           <div className="pages">
             <Routes>
-                <Route path="/dashboard" element={<Exams />}/>
+                <Route path="/dashboard" element={<Dashboard />}/>
                 <Route path="/admin" element={<Admin />}/>
                 <Route path="/createpage" element={<Create />}/>
                 <Route path="/admin/:id" element={<UpdatePage />}/>

@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import '../css/admin.css';
+import '../css/dashboard.css';
 import './search.css';
 var image = "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/"
 
 const Dash = () => {
-  const [medrecords, setMedRecords] = useState(null)
+const [medrecords, setMedRecords] = useState(null)
 
 
 useEffect(() => {
@@ -22,10 +22,10 @@ fetchMedRecords()
 
 
 return (
-
-    <div className="table">
+    <div className="medtable">
         <h1 font-size="larger" class="admin-component-title" align="left">Dashboard</h1>
-        <table className='admintable'>
+        <table >
+        
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -38,38 +38,38 @@ return (
                         <th>Zip</th>
                 
                     </tr>
-                </thead>
-        <tbody>
-        {medrecords && medrecords.map((MedRecord) => (
-            <tr>
-                <td>
-                    {MedRecord.Patient_ID}
-                </td>
-                <td>
-                    {MedRecord.Exam_id}
-                </td>
-                <td>
-                <img src={image+MedRecord.Png_Filename}alt="new"/>
-                </td>
-                <td>
-                    {MedRecord.Age}
-                </td>
-                <td>
-                    {MedRecord.Sex}
-                </td>
-                <td>
-                    {MedRecord.Latest_BMI}
-                </td>
-                <td>
-                    {MedRecord.Latest_Weight}
-                </td>
-                <td>
-                    {MedRecord.Zip}
-                </td>
-              
-            </tr>
-        ))}
-        </tbody>
+                    </thead>
+            <tbody>
+            {medrecords && medrecords.map((MedRecord) => (
+                <tr>
+                    <td>
+                        {MedRecord.Patient_ID}
+                    </td>
+                    <td>
+                        {MedRecord.Exam_id}
+                    </td>
+                    <td>
+                    <img src={image+MedRecord.Png_Filename}alt="new"/>
+                    </td>
+                    <td>
+                        {MedRecord.Age}
+                    </td>
+                    <td>
+                        {MedRecord.Sex}
+                    </td>
+                    <td>
+                        {MedRecord.Latest_BMI}
+                    </td>
+                    <td>
+                        {MedRecord.Latest_Weight}
+                    </td>
+                    <td>
+                        {MedRecord.Zip}
+                    </td>
+                
+                </tr>
+            ))}
+            </tbody>
         </table>
     </div>
     )   
