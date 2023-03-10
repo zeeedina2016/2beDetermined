@@ -1,15 +1,15 @@
-.search-inputs{
+.search{
     background-color: #ffffff;
-    height: 50px; /* this controls how long the navbar is*/  
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 98%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right:auto;
-    margin-top:20px;
-    border-radius: 2px;
+    margin-top:70px;
+    border-radius: 0.50em;
   }
 
   .search input{
@@ -29,9 +29,9 @@
   
   .search-icon {
     height:20px;
-    width:50px;
+    width: 50px;
     right: 25%;
-    padding: 3px;
+    padding: 10px;
     border-radius: 13px;
     background-color:#eaeef1;
     display:grid;
