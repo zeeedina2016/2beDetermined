@@ -15,7 +15,7 @@ function Navbar() {
                 </NavLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className = "nav-item">
-                    <NavLink exact to="/dashboard" activeClassName="active" className="nav-link" onClick={handleClick}>
+                    <NavLink exact to="/" activeClassName="active" className="nav-link" onClick={handleClick}>
                         <h2>Dashboard</h2>
                     </NavLink>
                 </li>
