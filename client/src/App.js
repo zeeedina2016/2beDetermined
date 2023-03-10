@@ -17,7 +17,7 @@ function App() {
         <Navbar />
           <div className="pages">
             <Routes>
-                <Route path="/dashboard" element={<Dashboard />}/>
+                <Route path="/" element={<Dashboard />}/>
                 <Route path="/admin" element={<Admin />}/>
                 <Route path="/createpage" element={<Create />}/>
                 <Route path="/admin/:id" element={<UpdatePage />}/>
