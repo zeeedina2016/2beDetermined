@@ -25,7 +25,6 @@ fetchMedRecords()
 return (
 
     <div className="table">
-        <h1 font-size="larger" class="admin-component-title" align="left">Admin Dashboard</h1>
         <table className='admintable'>
                 <thead>
                     <tr>
@@ -37,7 +36,7 @@ return (
                         <th>BMI</th>
                         <th>Weight</th>
                         <th>Zip</th>
-                        <th>Edit Delete</th>
+                        <th>Update</th>
                     </tr>
                 </thead>
         <tbody>

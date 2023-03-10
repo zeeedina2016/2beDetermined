@@ -1,54 +1,70 @@
 .form{
     background-color: #ffffff;
     height: 90%; /* this controls how long the navbar is*/
-    align-items: center;  
-    position: relative;
-    width:95%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    align-items: left;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5em;
+    margin-bottom: 2em;
     border-radius: 10px;
-    padding: 40px 0px;
+    width: 98%;
+    position: relative;
+    padding: 5em 0px;
+
   }
 
+  .App {
+    text-align: center;
+    background-color: rgb(234, 238, 241);
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
   .wrapper img{
     margin: auto;
     display: flex;
     width:10em;
     height:6em;
   }
-  .form h2{
+
+  .form h2 {
    color: #114973;
    text-align: center;
   }
+
   .form label{
     color: #114973;
   
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 19px;
+    margin: 0;
+    font-weight: 600;
+    color: inherit;
+    padding: 15px;
   }
 
   .buttonsContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
   }
   .submitButton{
     color: white;
     background-color: #114973;
-    border-color: #114973;
     border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 90px;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 0px;
-    
+    text-size-adjust: small;
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 20em;
   }
   .submitButton:hover {
     background-color: #8bafcb;

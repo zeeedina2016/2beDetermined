@@ -1,6 +1,8 @@
 .App {
     text-align: center;
     background-color: rgb(234, 238, 241);
+    margin-left: 3em;
+    margin-right: 3em;
   }
   
   .App-logo {
@@ -8,17 +10,38 @@
     pointer-events: none;
   }
   
-  .admin-component-title,
-  .newpatient, .createbutton {
-    padding-top: 1em;
-    font-size: larger;
+  .newpatient {
+    display: flex;
+    margin: 0em 0em 1em 1em;
+    align-items: left;
+    justify-content: left;
+    flex-direction: left;
+    color: #114973;
+    font-size: smaller;
+    font-size: calc(10px + 2vmin);
+    
+  }
+
+  thead {
+    position:sticky;
+    top: 0;
+  }
+
+  .pDiv {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+ 
+  .admin-component-title, 
+  .newpatient  {
+    background-color: #ffffff;
+    padding-top: .5em;
     display: flex;
     margin: 1em;
     align-items: left;
     justify-content: left;
     flex-direction: left;
     color: #114973;
-    
   }
 
   .pink {
@@ -48,13 +71,25 @@
   }
   
 
-  table {
+  table, 
+  #table {
     border: collapse;
     border-collapse: collapse;
     width: 98%;
     margin-left:auto;
     margin-right:auto;
     margin-top:20px;
+    font-size: smaller;
+  }
+
+  table {
+    border: collapse;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    
+
     font-size: smaller;
   }
 
@@ -67,8 +102,9 @@
     width: 98%;
     margin-left:auto;
     margin-right:auto;
-    margin-top:20px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: -1em;
 
   }
 
@@ -78,7 +114,6 @@
     width: 98%;
     margin-left:auto;
     margin-right:auto;
-    margin-top:20px;
     background-color: rgb(255, 255, 255);
 
   }
@@ -188,7 +223,9 @@
   width: 98%;
   margin-left:auto;
   margin-right:auto;
-  margin-top:20px;
+  margin-top:4em;
+  padding-bottom: 1em;
+  margin-bottom:1em;
   
 
 }
@@ -206,7 +243,7 @@
   margin-left:auto;
   margin-right:auto;
   margin-top:20px;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .search input{
@@ -250,6 +287,7 @@
   }
 }
 
+/*
 .update-button {
   text-size-adjust: small;
   text-decoration: none;
@@ -264,4 +302,43 @@
     background-color:#eaeef1;
     color: #114973;
     padding: 2px 6px 2px 6px;
+}
+
+*/
+
+/* Button */
+
+
+.update-button,
+.createbutton {
+  text-size-adjust: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.update-button, 
+.createbutton {
+  color: white;
+  background-color: #114973;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.update-button:hover, 
+.createbutton:hover {
+  background-color: #eaeef1;
+  color: #114973;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.createbutton {
+  width: 20em;
 }

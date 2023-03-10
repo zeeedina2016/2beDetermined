@@ -2,14 +2,15 @@
     background-color: #ffffff;
     height: 90%; /* this controls how long the navbar is*/
     align-items: center;  
-    position: relative;
-    width:98%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 75px;
-    margin-bottom: 25px;
+    margin-top: 3em;
+    margin-bottom: 2em;
     border-radius: 10px;
-    padding: 40px 0px;
+    padding-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
+
   }
 
   .wrapper img{
@@ -24,53 +25,54 @@
   }
   .create label{
     color: #114973;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
+    font-size: calc(8px + 2vmin);
   
   }
 
-  .buttonsContainer{
+  .buttonsContainer {
+    overflow: hidden;
+  }
+
+  .buttonsContainer, .blueButton, .redButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    padding: 1em;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
+
+
   }
-  .blueButton{
+  .blueButton, .redButton {
     color: white;
     background-color: #114973;
     border-color: #114973;
     border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 90px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    display: flex;
     margin-top: 0px;
-    
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 10em;
+    padding: 1em;
+    margin: 3em;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
   }
+
+
   .blueButton:hover {
-    background-color: #8bafcb;
+    background-color: #eaeef1;
+    color: #114973;
   }
-  .redButton{
-    color: rgb(224, 62, 62);
-    background-color: #BD2130;
-    border-color: #BD2130;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
+
+
   .redButton:hover{
-    background-color: #BD2130;
+    background-color: #eaeef1;
+    Color: #b33e3e;
   }
   a{
     color: grey;
@@ -88,19 +90,31 @@
     justify-content: center;
     margin-bottom: -30px;
     gap: 5em;
+    font-size: smaller;
+    font-size: calc(10px + 2vmin);
+    overflow: scroll;
   }
-  .textFields{
-    width: 300px;
-    padding: 3%;
-    margin: 5px 0 22px 0;
+  .textFields {
+    padding: 2em;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    width: auto;
     
   }
 
  
   
   
-  
+  @media (max-width: 920px) {
+    .buttonsContainer, .blueButton, .redButton  {
+
+      font-size: calc(3px + 2vmin);
+
+
+    }
+
+
+
+  }
