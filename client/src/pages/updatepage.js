@@ -154,12 +154,6 @@ export default function UpdatePage() {
         <div>
         <img src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + values.Png_Filename} alt="" width={250} height={250}/>
         </div>
-        
- 
-        <label>Date:</label>
-        <div>
-        <input className="textFields" type="text" name="Date" value={values.Date} onChange={handleInputChange}/>
-        </div>
           
         <label>Key Findings:</label>
         <div>
