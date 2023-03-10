@@ -3,10 +3,11 @@ import Dash from "../Components/Dashboard_companent.js";
 import Search from "../Components/search.js";
 
 function Dashboard() {
+  //const { response } = useApi();
   
   return (
     <><><div className='search-container'>
-      <Search />
+      <Search placeholder="Search..." />
     </div>
 
       <div className="App">
@@ -16,6 +17,7 @@ function Dashboard() {
             <Dash/>
           </p>
         </header>
+
       </div></>
       
      

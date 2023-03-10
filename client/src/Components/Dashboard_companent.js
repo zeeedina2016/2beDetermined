@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import '../css/dashboard.css';
+import '../css/admin.css';
 import './search.css';
 import { Link } from 'react-router-dom';
 var image = "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/"
 
 
 const Dash = () => {
-const [medrecords, setMedRecords] = useState(null)
+  const [medrecords, setMedRecords] = useState(null)
 
 
 useEffect(() => {
@@ -24,10 +24,10 @@ fetchMedRecords()
 
 
 return (
-    <div className="medtable">
+
+    <div className="table">
         <h1 font-size="larger" class="admin-component-title" align="left">Dashboard</h1>
-        <table >
-        
+        <table className='admintable'>
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -39,8 +39,8 @@ return (
                         <th>Zip</th>
                 
                     </tr>
-                    </thead>
-            <tbody>
+                </thead>
+        <tbody>
         {medrecords && medrecords.map((MedRecord) => (
             <tr>
                 <td>
