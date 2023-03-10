@@ -114,13 +114,12 @@ h3{
   box-sizing: border-box;
   
 }
+
 /* NEW */
 
-/*
-
-.examDiv {
+.examDiv{
   background-color: #ffffff;
-  height: 90%; 
+  height: 90%; /* this controls how long the navbar is*/
   align-items: center;  
   position: relative;
   width:95%;
@@ -386,7 +385,7 @@ h2 {
 }
 
 .date {
-  /* NEED TO CHANGE POS! 
+  /* NEED TO CHANGE POS! */
   position: absolute;
   width: 284.55px;
   height: 30.87px;
@@ -425,7 +424,7 @@ h2 {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* background: #FFFFFF; 
+  /* background: #FFFFFF; */
 }
 
 .keyFindings_H {
@@ -471,7 +470,7 @@ h2 {
   height: 626px;
   left: 466px;
   top: 197px;
-  background: #EAEEF1; 
+  background: #EAEEF1; */
 }
 
 .colHeader {
@@ -512,4 +511,4 @@ h2 {
     color: #e7195a;
     text-align: center;
     font-size: 3.5rem;
-  } */
+  }
