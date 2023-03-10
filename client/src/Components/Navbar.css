@@ -1,0 +1,100 @@
+/*HEADER*/
+  .navbar {
+    background-color: #114973;
+    height: 50px; /* this controls how long the navbar is*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    position: absolute ;
+    width: 100%;
+    top: 1px;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo{
+    color: #ffffff;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .nav-icon{
+    color: #ffffff;
+    position: absolute;
+    right: 0%;
+    font-size: 150%;
+    max-width: 320px;
+  }
+
+  .nav-menu {
+    margin-right: 80;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin-top: 0.5rem;
+    max-width: 320px;
+  }
+
+  /* add this to css to make page more responsive*/
+  @media (max-width: 320px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  .nav-item {
+    line-height: 2px;
+    margin-right: 0rem;
+  }
+
+.nav-item:after { 
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+    width: 90%;
+    margin:auto;
+    background: #ffffff;
+}
+.nav-item .active {
+    color: #8bafcb;
+    background:solid #8bafcb;
+}
+
+
+
+
+
+
+
+  
+  
+  
+ 
