@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../css/dashboard.css';
 import './search.css';
+import { Link } from 'react-router-dom';
 var image = "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/"
 
 const Dash = () => {
