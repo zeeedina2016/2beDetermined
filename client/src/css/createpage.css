@@ -45,7 +45,8 @@
 
 
   }
-  .blueButton, .redButton {
+  
+  .blueButton {
     color: white;
     background-color: #114973;
     border-color: #114973;
@@ -61,6 +62,25 @@
     margin: 3em;
     text-size-adjust: small;
     font-size: calc(8px + 2vmin);
+    max-height: 2em;
+  }
+
+  .redButton {
+    color: white;
+    background-color:#b33e3e;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-top: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 10em;
+    padding: 1em;
+    margin: 3em;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
+    max-height: 2em;
   }
 
 
