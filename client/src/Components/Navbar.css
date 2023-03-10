@@ -6,8 +6,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: absolute ;
     width: 100%;
+    top: 1px;
   }
 
   .nav-container {
@@ -27,7 +28,7 @@
   
   .nav-icon{
     color: #ffffff;
-    position: fixed;
+    position: absolute;
     right: 0%;
     font-size: 150%;
     max-width: 320px;

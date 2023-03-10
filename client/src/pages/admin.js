@@ -18,13 +18,13 @@ function Admin() {
           <p>
             <Home />
           </p>
+          <CreateButton />
         </header>
+        
 
       </div></>
       
-      <div>
-        <CreateButton/>
-      </div></>
+      </>
   );
 }
 
