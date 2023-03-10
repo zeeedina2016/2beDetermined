@@ -9,6 +9,7 @@ import Dashboard from './pages/dashboard';
 import Admin from './pages/admin';
 import Navbar from './Components/Navbar';
 import UpdatePage from './pages/updatepage';
+import Exam from './pages/exampage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/admin" element={<Admin />}/>
                 <Route path="/createpage" element={<Create />}/>
                 <Route path="/admin/:id" element={<UpdatePage />}/>
+                 <Route path="/exam/:id" element={<Exam />}/>
             </Routes>
           </div>
        </BrowserRouter>
