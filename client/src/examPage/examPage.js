@@ -68,7 +68,7 @@ function Exam(props) {
                     <div className="bmi">{patient.Latest_BMI}</div>
 
                     <h4 className="zipCode_H">ZipCode</h4>
-                    <div className="zipCode">{patient.Zipcode}</div>
+                    <div className="zipCode">{patient.Zip}</div>
                 </div>
             </div>
 
