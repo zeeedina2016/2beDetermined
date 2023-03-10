@@ -40,36 +40,35 @@ return (
                     </tr>
                     </thead>
             <tbody>
-            {medrecords && medrecords.map((MedRecord) => (
-                <tr>
-                    <td>
-                        {MedRecord.Patient_ID}
-                    </td>
-                    <td>
-                        {MedRecord.Exam_id}
-                    </td>
-                    <td>
-                    <img src={image+MedRecord.Png_Filename}alt="new"/>
-                    </td>
-                    <td>
-                        {MedRecord.Age}
-                    </td>
-                    <td>
-                        {MedRecord.Sex}
-                    </td>
-                    <td>
-                        {MedRecord.Latest_BMI}
-                    </td>
-                    <td>
-                        {MedRecord.Latest_Weight}
-                    </td>
-                    <td>
-                        {MedRecord.Zip}
-                    </td>
-                
-                </tr>
-            ))}
-            </tbody>
+        {medrecords && medrecords.map((MedRecord) => (
+            <tr>
+                <td>
+                    {MedRecord.Patient_ID}
+                </td>
+                <td>
+                    <Link to={`/exam/${MedRecord._id}`}>
+                    {MedRecord.Exam_id}
+                    </Link>
+                </td>
+                <td>
+                <img src={image+MedRecord.Png_Filename}alt="new"/>
+                </td>
+                <td>
+                    {MedRecord.Age}
+                </td>
+                <td>
+                    {MedRecord.Sex}
+                </td>
+                <td>
+                    {MedRecord.Latest_BMI}
+                </td>
+                <td>
+                    {MedRecord.Zip}
+                </td>
+              
+            </tr>
+        ))}
+        </tbody>
         </table>
     </div>
     )   
