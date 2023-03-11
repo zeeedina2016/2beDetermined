@@ -61,7 +61,7 @@ function Exam(props) {
                 <div>
                     <h2>Patient Info</h2>
 
-                    <label>Patient ID:</label>
+                    <label>Patient ID:</label> 
                     <div className="textFields">{patient.Patient_ID}</div>
 
                     <label>Age:</label>
