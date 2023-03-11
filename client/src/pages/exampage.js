@@ -111,7 +111,7 @@ function Exam(props) {
 //                 <div>
 //                     <h4 className="patientID_H">Patient ID</h4>
 //                     <div className="patientID">{patient.Patient_ID}</div>
-
+ 
 //                     <h4 className="age_H">Age</h4>
 //                     <div className="age">{patient.Age} </div>
 
