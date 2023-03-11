@@ -1,6 +1,7 @@
 import '../css/dashboard.css';
 import Dash from "../Components/Dashboard_companent.js";
 import Search from "../Components/search.js";
+import React from 'react';
 
 function Dashboard() {
   //const { response } = useApi();

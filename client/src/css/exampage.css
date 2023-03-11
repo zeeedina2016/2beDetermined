@@ -1,47 +1,44 @@
-/* google font */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-/*Layout*/
- * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #e5e2e2;
-  font-family: "Lato";
-  width: 100%;
-}
-
 /* NEW */
-.form{
+.examDetail{
   background-color: #ffffff;
-  height: 90%; /* this controls how long the navbar is*/
-  align-items: center;  
-  position: relative;
-  width:95%;
-  margin-left:auto;
-  margin-right:auto;
+  height: 100%;
+  width: 95%;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding-bottom: 15em;
   border-radius: 10px;
-  padding: 40px 0px;
 }
 
+
+.infoContainer name{
+  text-align: left;
+}
 .wrapper img{
   margin: auto;
   display: flex;
+  justify-content: center;
   width:10em;
   height:6em;
 }
-.form h2{
+
+.infoContainer img{
+  max-width:50%;
+} 
+
+
+.infoContainer h2{
  color: #114973;
  text-align: center;
 }
-.form label{
-  color: #114973;
 
+.infoContainer label{
+  color: #114973;
+  font-size: 1.5em;
 }
 
+/* 
 .buttonsContainer{
   display: flex;
   justify-content: center;
@@ -86,430 +83,40 @@ body {
 }
 .cancelButton:hover{
   background-color: #BD2130;
-}
-a{
+} */
+/* a{
   color: grey;
 }
 h3{
   font-weight: bold;
-}
+} */
 
 /*if you want to control size of a font in here, so as not to affect the navbar sizing, Make a div that wraps around everything in the page and reference it in the css file as '.className h1' this will only affect font size on that specific page*/
-.form h1 {
+/* .form h1 {
   font-size: 300%;
-}
+} */
 .infoContainer{
   display: flex;
-  justify-content: center;
-  margin-bottom: -30px;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 50%;
+  margin-bottom: 2em;
+  margin-right:20em;
+  margin-left:20em;
   gap: 5em;
 }
-.textFields{
-  width: 300px;
-  padding: 3%;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  
+
+.info{
+  background-color: #eaeef1;
+  /* text-align: left; */
+  /* align-content: start; */
+  vertical-align: top;
+  /* width: 10px;
+  height: 10px; */
+  padding: 10px;
+  padding-right: 30px;
+  margin-left: 2px;
+  margin-bottom: 30px;
+  display: block;
 }
 /* NEW */
-
-/*
-
-.examDiv {
-  background-color: #ffffff;
-  height: 90%; 
-  align-items: center;  
-  position: relative;
-  width:95%;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border-radius: 10px; 
-  padding: 40px 0px;
-}
-
-
-h1 {
-  text-align: center;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -1px;
-  color: inherit;
-  font-size: 25px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 19px;
-  margin: 0;
-  font-weight: 600;
-  color: inherit;
-  padding: 15px;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.col1_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 67px;
-  top: 216px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #114973;
-}
-
-.patientID_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 68px;
-  top: 267px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.patientID {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 72px;
-  top: 298px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
-
-.age_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 70px;
-  top: 335px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.age {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 72px;
-  top: 365px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
-
-.sex_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 68px;
-  top: 399px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.sex {
-  position: absolute;
-  width: 295px;
-  height: 32px;
-  left: 68px;
-  top: 417px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.bmi_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 68px;
-  top: 463px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.bmi {
-  position: absolute;
-  width: 295px;
-  height: 32px;
-  left: 68px;
-  top: 482px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.zipCode_H {
-  position: absolute;
-  width: 245px;
-  height: 31px;
-  left: 70px;
-  top: 534px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.zipCode {
-  position: absolute;
-  width: 295px;
-  height: 32px;
-  left: 70px;
-  top: 555px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.col2_H {
-  position: absolute;
-  width: 236.32px;
-  height: 29.9px;
-  left: 489.15px;
-  top: 212.43px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #114973;
-}
-
-.img {
-  position: absolute;
-  width: 259.47px;
-  height: 258.5px;
-  left: 700.39px;
-  top: 234.62px;
-  background: #D8E2E9;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.examID_H {
-  position: absolute;
-  width: 236.32px;
-  height: 29.9px;
-  left: 518.09px;
-  top: 543.28px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.examID {
-  position: absolute;
-  width: 236.32px;
-  height: 29.9px;
-  left: 521.94px;
-  top: 573.18px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
-
-.date_H {
-  position: absolute;
-  width: 236.32px;
-  height: 29.9px;
-  left: 518.09px;
-  top: 607.9px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.date {
-  /* NEED TO CHANGE POS! 
-  position: absolute;
-  width: 284.55px;
-  height: 30.87px;
-  left: 518.09px;
-  top: 640.09px;
-  background: #FFFFFF;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.url_H {
-  position: absolute;
-  width: 236.32px;
-  height: 29.9px;
-  left: 521.94px;
-  top: 683.14px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.url {
-  position: absolute;
-  width: 284.55px;
-  height: 30.87px;
-  left: 521.94px;
-  top: 702.43px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  /* background: #FFFFFF; 
-}
-
-.keyFindings_H {
-  position: absolute;
-  width: 236.32px;
-  height: 30.87px;
-  left: 875.94px;
-  top: 543.28px;
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8BAFCB;
-}
-
-.keyFindings {
-  position: absolute;
-  width: 236.32px;
-  height: 56px;
-  left: 886px;
-  top: 579px;
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
-
-.col1_Block {
-  position: absolute;
-  width: 325px;
-  height: 649px;
-  left: 55px;
-  top: 197px;
-  background-color: #EAEEF1;
-}
-
-.col2 {
-  /* position: absolute;
-  width: 762.97px;
-  height: 626px;
-  left: 466px;
-  top: 197px;
-  background: #EAEEF1; 
-}
-
-.colHeader {
-  color: #114973;
-  
-}
-
-.subObjectHeadings {
-  color: #8BAFCB;
-}
-
-.subObjectData {
-  background-color: white;
-}
-
-.buttonPatient {
-  position: absolute;
-  width: 118px;
-  height: 27px;
-  left: 159px;
-  top: 648px;
-  background: #114973;
-  color: white;
-}
-
-.buttonExam {
-  position: absolute;
-  width: 113.82px;
-  height: 26.04px;
-  left: 793.95px;
-  top: 769.95px;
-  background: #114973;
-  color: white;
-}
-
- pages {
-    margin-top: 10%;
-    color: #e7195a;
-    text-align: center;
-    font-size: 3.5rem;
-  } */
