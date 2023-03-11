@@ -43,7 +43,9 @@
     flex-direction: left;
     color: #114973;
   }
-
+  img{
+      max-width:20%;
+  }
   .pink {
     color: pink;
   }
