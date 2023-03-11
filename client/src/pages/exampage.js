@@ -81,9 +81,6 @@ function Exam(props) {
                     <h4 className="examID_H">Exam ID</h4>
                     <div className="examID">{patient.Exam_id}</div>
 
-                    <h4 className="date_H">Date</h4>
-                    <div className="date">{patient.Date}</div>
-
                     <h4 className="url_H">Image URL</h4>
                     <div className="url">{patient.Png_Filename}</div>
 
