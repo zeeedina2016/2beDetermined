@@ -1,5 +1,6 @@
 import "./search.css"
 import SearchIcon from '@mui/icons-material/Search';
+import React from 'react';
 
 /*const Search = () => {
     return(

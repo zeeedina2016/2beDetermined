@@ -1,6 +1,7 @@
 import '../css/admin.css';
 import Home from "../Components/Admin/admin_component.js";
 import CreateButton from '../Components/Create';
+import React from 'react';
 
 import Search from "../Components/search.js"
 
