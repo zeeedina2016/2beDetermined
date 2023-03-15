@@ -103,9 +103,6 @@ function Exam(props) {
                     <label>Key Findings:</label>
                     <div className="info">{patient.Key_Findings}</div>
 
-                    <h4 className="date_H">Date</h4>
-                    <div className="date">{patient.Date}</div>
-
                     <h4 className="url_H">Image URL</h4>
                     <div className="url">{patient.Png_Filename}</div>
 
