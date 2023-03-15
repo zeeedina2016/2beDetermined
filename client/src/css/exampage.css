@@ -115,3 +115,125 @@
     box-sizing: border-box;
     
   }
+/* NEW */
+.examDetail{
+  background-color: #ffffff;
+  height: 100%;
+  width: 95%;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding-bottom: 15em;
+  border-radius: 10px;
+}
+
+
+.infoContainer name{
+  text-align: left;
+}
+.wrapper img{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width:10em;
+  height:6em;
+}
+
+.infoContainer img{
+  max-width:50%;
+} 
+
+
+.infoContainer h2{
+ color: #114973;
+ text-align: center;
+}
+
+.infoContainer label{
+  color: #114973;
+  font-size: 1.5em;
+}
+
+/* 
+.buttonsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.submitButton{
+  color: white;
+  background-color: #114973;
+  border-color: #114973;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 0px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submitButton:hover {
+  background-color: #8bafcb;
+}
+.cancelButton{
+  color: rgb(224, 62, 62);
+  background-color: #BD2130;
+  border-color: #BD2130;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.cancelButton:hover{
+  background-color: #BD2130;
+} */
+/* a{
+  color: grey;
+}
+h3{
+  font-weight: bold;
+} */
+
+/*if you want to control size of a font in here, so as not to affect the navbar sizing, Make a div that wraps around everything in the page and reference it in the css file as '.className h1' this will only affect font size on that specific page*/
+/* .form h1 {
+  font-size: 300%;
+} */
+.infoContainer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 50%;
+  margin-bottom: 2em;
+  margin-right:20em;
+  margin-left:20em;
+  gap: 5em;
+}
+
+.info{
+  background-color: #eaeef1;
+  /* text-align: left; */
+  /* align-content: start; */
+  vertical-align: top;
+  /* width: 10px;
+  height: 10px; */
+  padding: 10px;
+  padding-right: 30px;
+  margin-left: 2px;
+  margin-bottom: 30px;
+  display: block;
+}
+/* NEW */

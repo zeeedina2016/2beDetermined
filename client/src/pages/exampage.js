@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import { useParams } from 'react-router-dom';
+// import '../App.css';
 import '../css/exampage.css';
 import { useParams } from 'react-router-dom';
 
@@ -47,39 +49,59 @@ function Exam(props) {
       }, [id])
 
     return (
-
-        <div>
-            <div>
-                <h1 className="col1_H">Patient Information</h1>
-                <div>
-                    <h4 className="patientID_H">Patient ID</h4>
-                    <div className="patientID">{patient.Patient_ID}</div>
-
-                    <h4 className="age_H">Age</h4>
-                    <div className="age">{patient.Age} </div>
-
-                    <h4 className="sex_H">Sex</h4>
-                    <div className="sex">{patient.Sex}</div>
-
-                    <h4 className="bmi_H">BMI</h4>
-                    <div className="bmi">{patient.Latest_BMI}</div>
-
-                    <h4 className="zipCode_H">ZipCode</h4>
-                    <div className="zipCode">{patient.Zip}</div>
-                </div>
+        <div className="examDetail">
+            <div className="wrapper">
+                <img src={logo} alt="medlogo" />
+                <h2>EXAM PAGE</h2>
             </div>
 
-            <div>
-                <h1 className="col2_H">Exam Information</h1>
+            <div className="infoContainer">
                 <div>
-                    <img 
-                        className="img"
-                        src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + patient.Png_Filename}
-                        alt={""}
-                    />
+                    <h2>Patient Info</h2>
 
-                    <h4 className="examID_H">Exam ID</h4>
-                    <div className="examID">{patient.Exam_id}</div>
+                    <label>Patient ID:</label> 
+                    <div className="info">{patient.Patient_ID}</div>
+
+                    <label>Age:</label>
+                    <div className="info">{patient.Age}</div>
+
+                    <label>Sex:</label>
+                    <div className="info">{patient.Sex}</div>
+
+                    <label>BMI:</label>
+                    <div className="info">{patient.Latest_BMI}</div>
+
+                    <label>ZipCode:</label>
+                    <div className="info">{patient.Zip}</div>
+                </div>
+
+                <div>
+                    <h2 className= "name">Exam Info</h2>
+
+                    <div>
+                        <img 
+                            className="medpic"
+                            src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + patient.Png_Filename}
+                            alt={""}
+                        />
+                    </div>
+
+                    <label>Exam ID:</label>
+                    <div className="info">{patient.Exam_id}</div>
+
+                    {/* <label>Image:</label>
+                    <div className="info">{patient.Png_Filename}</div> */}
+
+                    {/* <div>
+                        <img 
+                            className="medpic"
+                            src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + patient.Png_Filename}
+                            alt={""}
+                        />
+                    </div> */}
+
+                    <label>Key Findings:</label>
+                    <div className="info">{patient.Key_Findings}</div>
 
                     <h4 className="date_H">Date</h4>
                     <div className="date">{patient.Date}</div>
