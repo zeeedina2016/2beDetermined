@@ -3,7 +3,6 @@ import '../App.css';
 import { useParams } from 'react-router-dom';
 // import '../App.css';
 import '../css/exampage.css';
-import { useParams } from 'react-router-dom';
 
 function Exam(props) {
     const [patient, setPatient] = useState({
