@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { useParams } from 'react-router-dom';
-// import '../App.css';
+import logo from '../medlogo.png';
 import '../css/exampage.css';
 
 function Exam(props) {
@@ -87,17 +87,6 @@ function Exam(props) {
 
                     <label>Exam ID:</label>
                     <div className="info">{patient.Exam_id}</div>
-
-                    {/* <label>Image:</label>
-                    <div className="info">{patient.Png_Filename}</div> */}
-
-                    {/* <div>
-                        <img 
-                            className="medpic"
-                            src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + patient.Png_Filename}
-                            alt={""}
-                        />
-                    </div> */}
 
                     <label>Key Findings:</label>
                     <div className="info">{patient.Key_Findings}</div>
