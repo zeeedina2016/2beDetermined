@@ -1,120 +1,3 @@
-.form{
-    background-color: #ffffff;
-    height: 90%; /* this controls how long the navbar is*/
-    align-items: left;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4.5em;
-    margin-bottom: 2em;
-    border-radius: 10px;
-    width: 98%;
-    position: relative;
-    padding: 5em 0px;
-
-  }
-
-  .App {
-    text-align: center;
-    background-color: rgb(234, 238, 241);
-    margin-left: 3em;
-    margin-right: 3em;
-  }
-  
-  .wrapper img{
-    margin: auto;
-    display: flex;
-    width:10em;
-    height:6em;
-  }
-
-  .form h2 {
-   color: #114973;
-   text-align: center;
-  }
-
-  .form label{
-    color: #114973;
-  
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 19px;
-    margin: 0;
-    font-weight: 600;
-    color: inherit;
-    padding: 15px;
-  }
-
-  .buttonsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .submitButton{
-    color: white;
-    background-color: #114973;
-    border: none;
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 0px;
-    text-size-adjust: small;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    width: 20em;
-  }
-  .submitButton:hover {
-    background-color: #8bafcb;
-  }
-  .cancelButton{
-    color: rgb(224, 62, 62);
-    background-color: #BD2130;
-    border-color: #BD2130;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .cancelButton:hover{
-    background-color: #BD2130;
-  }
-  a{
-    color: grey;
-  }
-  h3{
-    font-weight: bold;
-  }
-
-  /*if you want to control size of a font in here, so as not to affect the navbar sizing, Make a div that wraps around everything in the page and reference it in the css file as '.className h1' this will only affect font size on that specific page*/
-.form h1 {
-    font-size: 300%;
-}
-  .infoContainer{
-    display: flex;
-    justify-content: center;
-    margin-bottom: -30px;
-    gap: 5em;
-  }
-  .textFields{
-    width: 300px;
-    padding: 3%;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    
-  }
 /* NEW */
 .examDetail{
   background-color: #ffffff;
@@ -138,6 +21,7 @@
   justify-content: center;
   width:10em;
   height:6em;
+  padding-top:2.5em;
 }
 
 .infoContainer img{
@@ -236,4 +120,3 @@ h3{
   margin-bottom: 30px;
   display: block;
 }
-/* NEW */

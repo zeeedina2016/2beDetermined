@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
 import { useParams } from 'react-router-dom';
-import logo from '../medlogo.png';
 import '../css/exampage.css';
+import logo from "../medlogo.png";
 
 function Exam(props) {
     const [patient, setPatient] = useState({
@@ -41,6 +40,9 @@ function Exam(props) {
               Key_Findings: (json.Key_Findings == undefined) ? "" : json.Key_Findings, 
               Brixa_Score: (json.Brixa_Score == undefined) ? "" : json.Brixa_Score, 
             })
+
+          } else {
+              console.log("Error")
           }
         }
     
@@ -90,20 +92,12 @@ function Exam(props) {
 
                     <label>Key Findings:</label>
                     <div className="info">{patient.Key_Findings}</div>
-
-                    <h4 className="url_H">Image URL</h4>
-                    <div className="url">{patient.Png_Filename}</div>
-
-                    <h4 className="keyFindings_H">Exam Details</h4>
-                    <input 
-                        className="keyFindings"
-                        type="text"
-                        value={patient.Key_Findings}
-                        onChange={e => setPatient({...patient, Key_Findings: e.target.value})}
-                    />
                 </div>
             </div>
+
         </div>
+
+
     );
 }
 
