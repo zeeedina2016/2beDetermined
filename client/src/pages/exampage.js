@@ -52,8 +52,8 @@ function Exam(props) {
     return (
         <div className="examDetail">
             <div className="wrapper">
-                <img src={logo} alt="medlogo" />
                 <h2>EXAM PAGE</h2>
+                <img src={logo} alt="medlogo" />
             </div>
 
             <div className="infoContainer">
