@@ -13,6 +13,9 @@ function Dashboard() {
       <div className="App">
 
         <header className="App-header">
+          <p className="pDiv" id='table'>
+            <h1 class="component-title" align="left">Dashboard</h1>
+          </p>
           <p>
             <Dash/>
           </p>

@@ -1,23 +1,18 @@
 .form{
-    background-color: #ffffff;
-    height: 90%; /* this controls how long the navbar is*/
-    align-items: left;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4.5em;
-    margin-bottom: 2em;
-    border-radius: 10px;
-    width: 98%;
-    position: relative;
-    padding: 5em 0px;
+  background-color: #ffffff;
+  height: 90%; /* this controls how long the navbar is*/
+  align-items: center;  
+  margin-top: 3em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  padding-top: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-size-adjust: small;
+  font-size: calc(8px + 2vmin);
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
 
-  }
-
-  .App {
-    text-align: center;
-    background-color: rgb(234, 238, 241);
-    margin-left: 3em;
-    margin-right: 3em;
   }
   
   .wrapper img{
@@ -34,6 +29,9 @@
 
   .form label{
     color: #114973;
+    text-size-adjust: small;
+    font-size: calc(8px + 2vmin);
+    font-size: calc(8px + 2vmin);
   
   }
 
@@ -53,7 +51,7 @@
   }
   .submitButton{
     color: white;
-    background-color: #114973;
+    background-color: #731156;
     border: none;
     padding: 1em;
     text-align: center;
@@ -99,19 +97,33 @@
 .form h1 {
     font-size: 300%;
 }
-  .infoContainer{
+  .infoContainerDiv{
     display: flex;
     justify-content: center;
     margin-bottom: -30px;
     gap: 5em;
+    font-size: smaller;
+    font-size: calc(10px + 2vmin);
+    overflow: scroll;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .help{
+    display: flex;
   }
   .textFields{
-    width: 300px;
+    width: auto;
     padding: 3%;
-    margin: 5px 0 22px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    font-size: calc(10px + 2vmin);
     
+  }
+
+
+  .patientInfo{
+    margin-left: 0em;
+    margin-right: 5em;
   }

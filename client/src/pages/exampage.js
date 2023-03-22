@@ -51,8 +51,9 @@ function Exam(props) {
 
     return (
         <div className="examDetail">
+            
+            <h2>EXAM PAGE</h2>
             <div className="wrapper">
-                <h2>EXAM PAGE</h2>
                 <img src={logo} alt="medlogo" />
             </div>
 
@@ -76,7 +77,7 @@ function Exam(props) {
                     <div className="info">{patient.Zip}</div>
                 </div>
 
-                <div>
+                <div class="exam">
                     <h2 className= "name">Exam Info</h2>
 
                     <div>

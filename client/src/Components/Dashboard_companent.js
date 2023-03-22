@@ -24,7 +24,6 @@ fetchMedRecords()
 
 return (
     <div className="medtable">
-        <h1 font-size="larger" class="admin-component-title" align="left">Dashboard</h1>
         <table >
         
                 <thead>
@@ -46,7 +45,7 @@ return (
                     {MedRecord.Patient_ID}
                 </td>
                 <td>
-                    <Link to={`/exam/${MedRecord._id}`}>
+                    <Link id="link" to={`/exam/${MedRecord._id}`}>
                     {MedRecord.Exam_id}
                     </Link>
                 </td>

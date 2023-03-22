@@ -1,19 +1,22 @@
 /* NEW */
-.examDetail{
+.examDetail {
   background-color: #ffffff;
-  height: 100%;
-  width: 95%;
-  margin-top: 25px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
-  padding-bottom: 15em;
+  height: 90%; /* this controls how long the navbar is*/
+  align-items: center;  
+  margin-top: 3em;
+  margin-bottom: 2em;
   border-radius: 10px;
+  padding-top: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-size-adjust: small;
+  font-size: calc(8px + 2vmin);
 }
 
 
 .infoContainer name{
   text-align: left;
+
 }
 
 .wrapper {
@@ -23,7 +26,6 @@
 .wrapper img{
   margin: auto;
   display: flex;
-  justify-content: center;
   width:10em;
   height:6em;
 }
@@ -33,14 +35,17 @@
 } 
 
 
-.infoContainer h2{
+.examDetail h2{
  color: #114973;
  text-align: center;
 }
 
-.infoContainer label{
+.examDetail label{
   color: #114973;
-  font-size: 1.5em;
+  font-size: calc(8px + 2vmin);
+  font-size: calc(8px + 2vmin);
+
+
 }
 
 /* 
@@ -102,25 +107,31 @@ h3{
 } */
 .infoContainer{
   display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  height: 50%;
-  margin-bottom: 2em;
-  margin-right:20em;
-  margin-left:20em;
+  justify-content: center;
+  padding-bottom: 2em;
   gap: 5em;
+  font-size: smaller;
+  font-size: calc(10px + 2vmin);
+  overflow: scroll;
+      margin-left: 3em;
+    margin-right: 3em;
 }
 
 .info{
-  background-color: #eaeef1;
   /* text-align: left; */
   /* align-content: start; */
-  vertical-align: top;
   /* width: 10px;
   height: 10px; */
-  padding: 10px;
-  padding-right: 30px;
-  margin-left: 2px;
+  padding: .5em;
   margin-bottom: 30px;
   display: block;
+  font-size: calc(10px + 2vmin);
+  width: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+
+}
+
+.exam {
+  width: auto;
 }

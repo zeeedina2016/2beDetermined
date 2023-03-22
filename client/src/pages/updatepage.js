@@ -99,13 +99,15 @@ export default function UpdatePage() {
 
     
         
-      <h2>EDIT PAGE</h2>
+      <h2>UPDATE PAGE</h2>
       <div className="wrapper"> 
         <img src={logo} alt="medlogo" />
       </div>
 
       <form onSubmit={handleSubmit}>
-      <div class='infoContainer'>
+      <div class='infoContainerDiv'>
+        
+        <div class='help'>
         <div className="patientInfo">
           <h2> Patient Info</h2>
 
@@ -171,11 +173,12 @@ export default function UpdatePage() {
       
         
         </div>
+        </div>
       </div> 
       
       <div className='buttonsContainer'>
-        <button className='submitButton' type="submit">Update</button>
-        <button className='cancelButton' onClick={handleClick}>Cancel</button>
+        <button className='blueButton' type="submit">Update</button>
+        <button className='redButton' onClick={handleClick}>Cancel</button>
       </div>
     
     </form>
